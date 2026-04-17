@@ -185,7 +185,7 @@
 
         gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
-        ScrollTrigger.getAll().forEach((st) => st.kill());
+        // ScrollTrigger.getAll().forEach((st) => st.kill());
 
         ScrollTrigger.matchMedia({
             "(min-width: 992px)": () => {
@@ -654,7 +654,7 @@
 
 
     $(window).on("load", function() {
-        const hash = window.location.hash;
+        /* const hash = window.location.hash;
         if (hash && $(hash).length) {
             setTimeout(() => {
                 gsap.to(window, {
@@ -663,6 +663,6 @@
                     ease: "power2.out",
                 });
             }, 800);
-        }
+        } */
     });
 })(jQuery);

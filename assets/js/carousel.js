@@ -30,17 +30,17 @@ $(window).on("load", function() {
         var perGroupMd = $this.data("pagination-md") || 1;
         var perGroupLg = $this.data("pagination-lg") || 1;
         var gridRows = $this.data("grid") || 1;
-        var cursorType = $this.data("cursor") ? ? false;
-        var loop = $this.data("loop") ? ? false;
-        var loopMd = $this.data("loop-md") ? ? false;
+        var cursorType = $this.data("cursor") || false;
+        var loop = $this.data("loop") || false;
+        var loopMd = $this.data("loop-md") || false;
         var effect = $this.data("effect") || "slide";
         var atPlay = $this.data("auto"); // True || False
         var speed = $this.data("speed") || 800;
         var delay = $this.data("delay") || 1000;
         var direction = $this.data("direction") || "horizontal";
-        var centered = $this.data("center") ? ? false;
+        var centered = $this.data("center") || false;
         var init = $this.data("init") || 0;
-        var clickSlide = $this.data("click-slide") ? ? false;
+        var clickSlide = $this.data("click-slide") || false;
 
         var swiperT = new Swiper($this[0], {
             direction: direction,
@@ -66,22 +66,28 @@ $(window).on("load", function() {
                 fill: "row",
             },
             pagination: {
-                el: [$this.find(".tf-sw-pagination")[0], $this.closest(".tf-pag-swiper").find(".tf-sw-pagination")[0]],
+                el: $this.find(".tf-sw-pagination")[0] || $this.closest(".tf-pag-swiper").find(".tf-sw-pagination")[0],
                 clickable: true,
             },
             observer: true,
             observeParents: true,
             navigation: {
-                nextEl: [
-                    $this.closest(".tf-btn-swiper-main").find(".nav-next-swiper")[0],
-                    $this.closest(".container").find(".group-btn-slider .nav-next-swiper")[0],
-                    $this.closest(".tf-btn-swiper-main").find(".nav-next-swiper-2")[0],
-                ],
-                prevEl: [
-                    $this.closest(".tf-btn-swiper-main").find(".nav-prev-swiper")[0],
-                    $this.closest(".container").find(".group-btn-slider .nav-prev-swiper")[0],
-                    $this.closest(".tf-btn-swiper-main").find(".nav-prev-swiper-2")[0],
-                ],
+                nextEl: (function() {
+                    const el = $this.closest(".row").find(".nav-next-swiper")[0] ||
+                        $this.closest(".tf-btn-swiper-main").find(".nav-next-swiper")[0] ||
+                        $this.closest(".container").find(".group-btn-slider .nav-next-swiper")[0] ||
+                        $this.closest(".tf-btn-swiper-main").find(".nav-next-swiper-2")[0];
+                    if (el) $(el).css("cursor", "pointer");
+                    return el;
+                })(),
+                prevEl: (function() {
+                    const el = $this.closest(".row").find(".nav-prev-swiper")[0] ||
+                        $this.closest(".tf-btn-swiper-main").find(".nav-prev-swiper")[0] ||
+                        $this.closest(".container").find(".group-btn-slider .nav-prev-swiper")[0] ||
+                        $this.closest(".tf-btn-swiper-main").find(".nav-prev-swiper-2")[0];
+                    if (el) $(el).css("cursor", "pointer");
+                    return el;
+                })(),
             },
             breakpoints: {
                 575: {

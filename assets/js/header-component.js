@@ -1,65 +1,23 @@
-
 const headerTemplate = `
         <!-- Header -->
         <header class="tf-header header2">
             <div class="header-inner">
                 <a href="index.html" class="logo-site">
-                    <img src="assets/images/logo/logo.svg" alt="">
+            <img src="assets/quebix-logo.png" alt="">
                 </a>
                 <div class="box-navigation">
                     <ul class="nav-menu-main">
                         <li class="menu-item has-child">
-                            <a href="#" class="item-link link1">Home</a>
-                            <ul class="sub-menu">
-                                <li class="sub-menu-item">
-                                    <a href="index.html" class="item-link link1">Home Gradient</a>
-                                </li>
-                                <li class="sub-menu-item">
-                                    <a href="index-v2.html" class="item-link link1">Home Animated</a>
-                                </li>
-                            </ul>
+                            <a href="index.html" class="item-link link1">Home</a>
                         </li>
                         <li class="menu-item">
                             <a href="about.html" class="item-link link1">About</a>
                         </li>
                         <li class="menu-item has-child">
-                            <a href="#" class="item-link link1">Services</a>
-                            <ul class="sub-menu">
-                                <li class="sub-menu-item">
-                                    <a href="service.html" class="item-link link1">Services</a>
-                                </li>
-                                <li class="sub-menu-item">
-                                    <a href="service-single.html" class="item-link link1">Services single</a>
-                                </li>
-                            </ul>
+                            <a href="service.html" class="item-link link1">Services</a>
                         </li>
                         <li class="menu-item has-child">
-                            <a href="#" class="item-link link1">Works</a>
-                            <ul class="sub-menu">
-                                <li class="sub-menu-item">
-                                    <a href="work.html" class="item-link link1">Works</a>
-                                </li>
-                                <li class="sub-menu-item">
-                                    <a href="work-single.html" class="item-link link1">Works single</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="menu-item has-child">
-                            <a href="#" class="item-link link1">Blog</a>
-                            <ul class="sub-menu">
-                                <li class="sub-menu-item">
-                                    <a href="blog-standard.html" class="item-link link1">Blog standard</a>
-                                </li>
-                                <li class="sub-menu-item">
-                                    <a href="blog-two-columns.html" class="item-link link1">Blog grid 2</a>
-                                </li>
-                                <li class="sub-menu-item">
-                                    <a href="blog-three-columns.html" class="item-link link1">Blog grid 3</a>
-                                </li>
-                                <li class="sub-menu-item">
-                                    <a href="blog-single.html" class="item-link link1">Blog single</a>
-                                </li>
-                            </ul>
+                            <a href="work.html" class="item-link link1">Works</a>
                         </li>
                         <li class="menu-item">
                             <a href="contact.html" class="item-link link1">Contact</a>
@@ -83,7 +41,7 @@ const headerTemplate = `
                     <div class="offcanvas-content_wrapin">
                         <div class="canvas_head">
                             <a href="index.html" class="logo-site">
-                                <img src="assets/images/logo/logo.svg" alt="">
+                                <img src="assets/quebix-logo.png" alt="">
                             </a>
                             <div class="btn-mobile-menu close-mb-menu text-caption link">
                                 <i class="icon icon-close"></i> CLOSE
@@ -93,19 +51,9 @@ const headerTemplate = `
                             <ul class="nav-ul-mb" id="mobile-menu">
                                 <li>
                                     <div class="item">
-                                        <div class="has-sub-menu">
-                                            <a href="#dropdown-menu-index" class="mb-menu-link text-display-1 collapsed"
-                                                data-bs-toggle="collapse" aria-expanded="false"
-                                                aria-controls="dropdown-menu-index">
-                                                <span class="text">Home</span>
-                                            </a>
-                                            <div id="dropdown-menu-index" class="collapse" data-bs-parent="#mobile-menu">
-                                                <ul class="sub-nav-menu">
-                                                    <li><a href="index.html" class="sub-nav-link text-white">Home Gradient</a></li>
-                                                    <li><a href="index-v2.html" class="sub-nav-link text-white">Home Animated</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
+                                        <a href="index.html" class="mb-menu-link text-display-1">
+                                            <span class="text">Home</span>
+                                        </a>
                                     </div>
                                 </li>
                                 <li>
@@ -117,55 +65,16 @@ const headerTemplate = `
                                 </li>
                                 <li>
                                     <div class="item">
-                                        <div class="has-sub-menu">
-                                            <a href="#dropdown-menu-1" class="mb-menu-link text-display-1 collapsed"
-                                                data-bs-toggle="collapse" aria-expanded="false"
-                                                aria-controls="dropdown-menu-1">
-                                                <span class="text">Works</span>
-                                            </a>
-                                            <div id="dropdown-menu-1" class="collapse" data-bs-parent="#mobile-menu">
-                                                <ul class="sub-nav-menu">
-                                                    <li><a href="work.html" class="sub-nav-link text-white">Works</a></li>
-                                                    <li><a href="work-single.html" class="sub-nav-link text-white">Works Single</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
+                                        <a href="work.html" class="mb-menu-link text-display-1">
+                                            <span class="text">Works</span>
+                                        </a>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="item">
-                                        <div class="has-sub-menu">
-                                            <a href="#dropdown-menu-2" class="mb-menu-link text-display-1 collapsed"
-                                                data-bs-toggle="collapse" aria-expanded="false"
-                                                aria-controls="dropdown-menu-2">
-                                                <span class="text">Services</span>
-                                            </a>
-                                            <div id="dropdown-menu-2" class="collapse" data-bs-parent="#mobile-menu">
-                                                <ul class="sub-nav-menu">
-                                                    <li><a href="service.html" class="sub-nav-link text-white">Services</a></li>
-                                                    <li><a href="service-single.html" class="sub-nav-link text-white">Services Single</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="item">
-                                        <div class="has-sub-menu">
-                                            <a href="#dropdown-menu-3" class="mb-menu-link text-display-1 collapsed"
-                                                data-bs-toggle="collapse" aria-expanded="false"
-                                                aria-controls="dropdown-menu-3">
-                                                <span class="text">Blog</span>
-                                            </a>
-                                            <div id="dropdown-menu-3" class="collapse" data-bs-parent="#mobile-menu">
-                                                <ul class="sub-nav-menu">
-                                                    <li><a href="blog-standard.html" class="sub-nav-link text-white">Blog Standard</a></li>
-                                                    <li><a href="blog-two-columns.html" class="sub-nav-link text-white">Blog Grid 2</a></li>
-                                                    <li><a href="blog-three-columns.html" class="sub-nav-link text-white">Blog Grid 3</a></li>
-                                                    <li><a href="blog-single.html" class="sub-nav-link text-white">Blog Single</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
+                                        <a href="service.html" class="mb-menu-link text-display-1">
+                                            <span class="text">Services</span>
+                                        </a>
                                     </div>
                                 </li>
                                 <li>
@@ -179,21 +88,17 @@ const headerTemplate = `
                         </div>
                         <div class="canvas_foot">
                             <div class="left">
-                                <a href="mailto:aigocy@gmail.com" class="text-caption text-neutral-200">aigocy@gmail.com</a>
+                                <a href="mailto:quebixofficial@gmail.com" class="text-caption text-neutral-200">quebixofficial@gmail.com</a>
                                 <p class="text-caption text-neutral-200">
                                     CUP <span class="clock"></span>
                                 </p>
                             </div>
                             <div class="right">
-                                <a href="#" class="tf-link-icon text-caption text-neutral-200">
+                                <a href="https://www.instagram.com/" target="_blank" class="tf-link-icon text-caption text-neutral-200">
                                     <i class="icon icon-arrow-top-right"></i>
-                                    TWITTER (X)
+                                    INSTAGRAM
                                 </a>
-                                <a href="#" class="tf-link-icon text-caption text-neutral-200">
-                                    <i class="icon icon-arrow-top-right"></i>
-                                    DRIBBBLE
-                                </a>
-                                <a href="#" class="tf-link-icon text-caption text-neutral-200">
+                                <a href="https://www.linkedin.com/" target="_blank" class="tf-link-icon text-caption text-neutral-200">
                                     <i class="icon icon-arrow-top-right"></i>
                                     LINKEDIN
                                 </a>
@@ -206,44 +111,56 @@ const headerTemplate = `
         <!-- /Mobile Menu -->
 `;
 
-document.addEventListener("DOMContentLoaded", function() {
-    const headerPlaceholder = document.getElementById('header-placeholder');
-    if (headerPlaceholder) {
-        headerPlaceholder.innerHTML = headerTemplate;
+document.addEventListener("DOMContentLoaded", function () {
+  const headerPlaceholder = document.getElementById("header-placeholder");
+  if (headerPlaceholder) {
+    headerPlaceholder.innerHTML = headerTemplate;
 
-        // Auto-highlight active nav items
-        const currentPath = window.location.pathname.split('/').pop() || 'index.html';
-        const navLinks = document.querySelectorAll('.item-link, .sub-nav-link, .mb-menu-link');
-        
-        navLinks.forEach(link => {
-            const href = link.getAttribute('href');
-            if (href === currentPath) {
-                link.classList.add('active');
-                
-                // For desktop sub-menus: set parent link to active if child is active
-                let parentMenu = link.closest('.has-child');
-                if (parentMenu) {
-                    const parentLink = parentMenu.querySelector('.item-link');
-                    if (parentLink) parentLink.classList.add('active');
-                }
-            }
-        });
+    // Auto-highlight active nav items
+    const currentPath =
+      window.location.pathname.split("/").pop() || "index.html";
+    const navLinks = document.querySelectorAll(
+      ".item-link, .sub-nav-link, .mb-menu-link",
+    );
 
-        // Re-bind Mobile Menu Toggles
-        if (window.jQuery) {
-            const $ = window.jQuery;
-            
-            $(document).on("click", ".open-mb-menu", function(e) {
-                e.preventDefault();
-                $(".offcanvas-menu").addClass("show");
-                $("body").addClass("overflow-hidden");
-            });
+    navLinks.forEach((link) => {
+      const href = link.getAttribute("href");
+      if (href === currentPath) {
+        link.classList.add("active");
 
-            $(document).on("click", ".close-mb-menu", function(e) {
-                e.preventDefault();
-                $(".offcanvas-menu").removeClass("show");
-                $("body").removeClass("overflow-hidden");
-            });
+        // For desktop sub-menus: set parent link to active if child is active
+        let parentMenu = link.closest(".has-child");
+        if (parentMenu) {
+          const parentLink = parentMenu.querySelector(".item-link");
+          if (parentLink) parentLink.classList.add("active");
         }
+      }
+    });
+
+    // Re-bind Mobile Menu Toggles
+    if (window.jQuery) {
+      const $ = window.jQuery;
+
+      // Sticky Header
+      $(window).on("scroll", function () {
+        if ($(window).scrollTop() > 100) {
+          $("header").addClass("header-sticky");
+        } else {
+          $("header").removeClass("header-sticky");
+        }
+      });
+
+      $(document).on("click", ".open-mb-menu", function (e) {
+        e.preventDefault();
+        $(".offcanvas-menu").addClass("show");
+        $("body").addClass("overflow-hidden");
+      });
+
+      $(document).on("click", ".close-mb-menu", function (e) {
+        e.preventDefault();
+        $(".offcanvas-menu").removeClass("show");
+        $("body").removeClass("overflow-hidden");
+      });
     }
+  }
 });

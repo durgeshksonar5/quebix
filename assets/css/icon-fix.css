@@ -10,6 +10,7 @@
 .icon-grip-lines-solid:before { content: "\f0c9"; font-family: "Font Awesome 6 Free"; font-weight: 900; }
 .icon-close:before { content: "\f00d"; font-family: "Font Awesome 6 Free"; font-weight: 900; }
 .icon-long-arrow-alt-up-solid:before { content: "\f062"; font-family: "Font Awesome 6 Free"; font-weight: 900; }
+.icon-long-arrow-alt-down-solid:before { content: "\f063"; font-family: "Font Awesome 6 Free"; font-weight: 900; }
 .icon-long-arrow-alt-right-solid:before { content: "\f061"; font-family: "Font Awesome 6 Free"; font-weight: 900; }
 .icon-long-arrow-alt-left-solid:before { content: "\f060"; font-family: "Font Awesome 6 Free"; font-weight: 900; }
 .icon-angle-down-solid:before { content: "\f107"; font-family: "Font Awesome 6 Free"; font-weight: 900; }
@@ -22,6 +23,7 @@
 .icon-search-solid:before { content: "\f002"; font-family: "Font Awesome 6 Free"; font-weight: 900; }
 .icon-paper-plane:before { content: "\f1d8"; font-family: "Font Awesome 6 Free"; font-weight: 400; }
 .icon-envelope-solid:before { content: "\f0e0"; font-family: "Font Awesome 6 Free"; font-weight: 900; }
+.icon-headset-solid:before { content: "\f590"; font-family: "Font Awesome 6 Free"; font-weight: 900; }
 .icon-phone-alt-solid:before { content: "\f879"; font-family: "Font Awesome 6 Free"; font-weight: 900; }
 .icon-map-marker-solid:before { content: "\f3c5"; font-family: "Font Awesome 6 Free"; font-weight: 900; }
 .icon-arrow-top-right:before { content: "\f35d"; font-family: "Font Awesome 6 Free"; font-weight: 900; }
@@ -47,3 +49,7 @@
 .icon-user-friends-solid:before { content: "\f500"; font-family: "Font Awesome 6 Free"; font-weight: 900; }
 .icon-paperclip-solid:before { content: "\f0c6"; font-family: "Font Awesome 6 Free"; font-weight: 900; }
 .icon-plug-solid:before { content: "\f1e6"; font-family: "Font Awesome 6 Free"; font-weight: 900; }
+.icon-user-check-solid:before,
+.icon-user-check-solid-1:before { content: "\f4fc"; font-family: "Font Awesome 6 Free"; font-weight: 900; }
+.icon-book-solid:before { content: "\f02d"; font-family: "Font Awesome 6 Free"; font-weight: 900; }
+.icon-mobile-alt-solid:before { content: "\f3cd"; font-family: "Font Awesome 6 Free"; font-weight: 900; }
