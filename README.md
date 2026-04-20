@@ -20,12 +20,12 @@
 
 ## 🛠️ Services Offered
 
-| Service | Description | Key Focus |
-| :--- | :--- | :--- |
-| **SEO & Web Development** | Professional website creation tailored for search ranking. | Performance, Speed, SEO |
-| **Web Application Development**| Custom, scalable web apps for business automation. | API Integration, Dashboards |
-| **Mobile App Development** | Native-quality Android & iOS applications. | Smooth UX, Secure Backend |
-| **Digital Marketing** | Growth-focused strategies to increase brand visibility. | Lead Gen, Social Media |
+| Service                         | Description                                                | Key Focus                   |
+| :------------------------------ | :--------------------------------------------------------- | :-------------------------- |
+| **SEO & Web Development**       | Professional website creation tailored for search ranking. | Performance, Speed, SEO     |
+| **Web Application Development** | Custom, scalable web apps for business automation.         | API Integration, Dashboards |
+| **Mobile App Development**      | Native-quality Android & iOS applications.                 | Smooth UX, Secure Backend   |
+| **Digital Marketing**           | Growth-focused strategies to increase brand visibility.    | Lead Gen, Social Media      |
 
 ---
 
@@ -82,5 +82,3 @@ quebix/
 - **Mission**: Human-Centered Digital Solutions Built for Growth.
 
 ---
-
-*Generated with ❤️ by Antigravity AI.*
