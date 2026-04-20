@@ -5342,6 +5342,27 @@ button.animate-btn::after,
     animation: rippleFade 1.8s ease-out infinite;
 }
 
+@media (max-width: 767px) {
+    .section-about-us .col-left .sub {
+        background: rgba(24, 24, 27, 0.5);
+        backdrop-filter: blur(8px);
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        padding: 8px 18px;
+        font-size: 13px;
+        font-weight: 500;
+        letter-spacing: 0.02em;
+        border-radius: 100px;
+        margin-bottom: 20px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+    
+    .section-about-us .col-left .sub .dot {
+        width: 5px;
+        height: 5px;
+        background-color: #ff3b26; /* Ensuring a vibrant red as per image */
+    }
+}
+
 .section-about-us .col-left .title {
     margin-bottom: 28px;
     letter-spacing: 0;
