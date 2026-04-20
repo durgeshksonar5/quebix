@@ -13,7 +13,7 @@
 - **🚀 SEO-First Approach**: Every line of code is written with search visibility and performance in mind.
 - **🎨 User-Centric Design**: Intuitive UI/UX focused on high engagement and seamless user experiences.
 - **⚡ Performance Optimization**: Ultra-fast load times through clean code and modern asset delivery.
-- **📱 Responsive & Mobile-First**: Perfectly fluid layouts across desktop, tablet, and mobile devices.
+- **📱 Responsive & Mobile-First**: Perfectly fluid layouts across desktop, tablet, and mobile devices (including specialized mobile banner enhancements).
 - **🔒 Secure by Design**: Robust security protocols and encrypted data integrations for enterprise reliability.
 
 ---
@@ -23,7 +23,7 @@
 | Service | Description | Key Focus |
 | :--- | :--- | :--- |
 | **SEO & Web Development** | Professional website creation tailored for search ranking. | Performance, Speed, SEO |
-| **Web Application Development** | Custom, scalable web apps for business automation. | API Integration, Dashboards |
+| **Web Application Development**| Custom, scalable web apps for business automation. | API Integration, Dashboards |
 | **Mobile App Development** | Native-quality Android & iOS applications. | Smooth UX, Secure Backend |
 | **Digital Marketing** | Growth-focused strategies to increase brand visibility. | Lead Gen, Social Media |
 
@@ -32,7 +32,7 @@
 ## 💻 Tech Stack
 
 - **Core**: HTML5, CSS3, JavaScript (ES6+).
-- **Styling**: Bootstrap 5, Vanilla CSS, Custom Animations.
+- **Styling**: Bootstrap 5, Vanilla CSS, Custom Animations, Glassmorphism (Mobile).
 - **Components**: Swiper.js (Sliders), Slick Carousel, Animate.css.
 - **Icons**: FontAwesome 6, Icomoon.
 - **Visuals**: Canvas-based cursor trails, GSAP-style fade effects.
@@ -45,16 +45,15 @@
 quebix/
 ├── assets/                 # Core project assets
 │   ├── css/                # Custom stylesheets (styles.css, icon-fix.css)
-│   ├── images/             # UI elements, logos, and item graphics
-│   ├── js/                 # Interaction logic and vendor initializations
+│   ├── images/             # UI elements, logos, and section graphics
+│   ├── js/                 # Interaction logic and vendor initializations (main.js)
 │   ├── fonts/              # Local font files
 │   └── vendor/             # Third-party libraries (Bootstrap, Swiper, etc.)
 ├── index.html              # Main Landing Page
 ├── about.html              # Agency Mission & Vision
 ├── service.html            # Detailed Service Offerings
 ├── work.html               # Portfolio & Case Studies
-├── contact.html            # Lead Generation & Contact Form
-└── header.html             # Reusable Header Component
+└── contact.html            # Lead Generation & Contact Form
 ```
 
 ---
@@ -63,20 +62,22 @@ quebix/
 
 1. **Clone the project**:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/durgeshksonar5/quebix.git
    ```
 2. **Open the project**:
    Simply open `index.html` in any modern web browser to view the site locally.
 3. **Development**:
-   The project uses a standard static structure. Edits to CSS can be made in `assets/css/styles.css`.
+   The project uses a standard static structure. Global styles are managed in `assets/css/styles.css`, and core interactions in `assets/js/main.js`.
 
 ---
 
 ## 👤 Branding & Contact
 
-**Quebix Digital** is dedicated to delivering impact through precision. 
+**Quebix Digital** is dedicated to delivering impact through precision. We are proudly delivering digital solutions all over Maharashtra.
 
 - **CEO**: Srushti Naphade
+- **Phone**: [+91 77699 71133](tel:+917769971133)
+- **Email**: [quebixofficial@gmail.com](mailto:quebixofficial@gmail.com)
 - **Location**: Pune, Maharashtra
 - **Mission**: Human-Centered Digital Solutions Built for Growth.
 
