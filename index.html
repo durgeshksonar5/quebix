@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="assets/vendor/css/slick.css">
     <link rel="stylesheet" href="assets/vendor/css/slick.theme.css">
     <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/loader.css">
 
     <!-- Favicon and Touch Icons  -->
     <link rel="shortcut icon" href="assets/favicon-new.png">
@@ -30,7 +31,21 @@
     <link rel="icon" type="image/png" href="assets/favicon-new.png">
 </head>
 
-<body class="counter-scroll">
+<body class="counter-scroll preloader-active">
+    <div id="preloader">
+        <div class="loader-card">
+            <div class="loader-container">
+                <p>loading</p>
+                <div class="words">
+                    <span class="word">Websites</span>
+                    <span class="word">SEO</span>
+                    <span class="word">Apps</span>
+                    <span class="word">Quebix</span>
+                    <span class="word">Websites</span>
+                </div>
+            </div>
+        </div>
+    </div>
     <canvas class="cursor-trail" id="trail" style="display: none;"></canvas>
 
     <!-- Scroll Top -->
@@ -213,11 +228,8 @@
                             </div>
                         </div>
                         <div class="box-quotes effectFade fadeRotateX">
-                            <div class="image ">
-                                <img src="assets/ceo.png" alt="">
-                            </div>
                             <div class="content">
-                                <div class="icon mb-8">
+                                <div class="icon mb-12">
                                     <svg width="23" height="20" viewBox="0 0 23 20" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -225,12 +237,16 @@
                                             fill="#E4E4E7" />
                                     </svg>
                                 </div>
-                                <div class="text-body-1 fw-semibold desc">Built with precision. Delivered with impact.
+                                <div class="text-body-1 fw-semibold desc">At Quebix Digital, we don’t just build
+                                    websites—we create powerful, engaging digital experiences that deliver measurable
+                                    real-world
+                                    results. Our mission is to empower businesses through innovation, smart strategy,
+                                    sustainable growth, and cutting-edge solutions that drive long-term success.
                                 </div>
-                                <div class="cite">
-                                    <div class="name text-body-3 fw-semibold">Srushti Naphade</div>
+                                <div class="cite mt-20">
+                                    <div class="name text-body-2 fw-bold text-brand">Srushti Naphade</div>
                                     <div class="line"></div>
-                                    <div class="sub text-body-3">Quebix's CEO</div>
+                                    <div class="sub text-body-3">Founder & CEO, Quebix</div>
                                 </div>
                             </div>
                         </div>
@@ -1590,6 +1606,7 @@
         <script src="assets/js/gsapAnimation.js"></script>
 
         <script src="assets/js/header-component.js"></script>
+        <script src="assets/js/loader.js"></script>
         <script src="assets/js/main.js"></script>
 
         <script>

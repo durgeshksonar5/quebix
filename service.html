@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="assets/vendor/css/slick.css">
     <link rel="stylesheet" href="assets/vendor/css/slick.theme.css">
     <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/loader.css">
 
     <!-- Favicon and Touch Icons  -->
     <link rel="shortcut icon" href="assets/favicon-new.png">
@@ -30,7 +31,21 @@
     <link rel="icon" type="image/png" href="assets/favicon-new.png">
 </head>
 
-<body class="">
+<body class="preloader-active">
+    <div id="preloader">
+        <div class="loader-card">
+            <div class="loader-container">
+                <p>loading</p>
+                <div class="words">
+                    <span class="word">Websites</span>
+                    <span class="word">SEO</span>
+                    <span class="word">Apps</span>
+                    <span class="word">Quebix</span>
+                    <span class="word">Websites</span>
+                </div>
+            </div>
+        </div>
+    </div>
     <canvas class="cursor-trail" id="trail" style="display: none;"></canvas>
 
     <!-- Scroll Top -->
@@ -687,6 +702,7 @@
     <script src="assets/js/gsapAnimation.js"></script>
 
     <script src="assets/js/header-component.js"></script>
+    <script src="assets/js/loader.js"></script>
     <script src="assets/js/main.js"></script>
 
 </body>

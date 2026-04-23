@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="assets/vendor/css/slick.css">
     <link rel="stylesheet" href="assets/vendor/css/slick.theme.css">
     <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/loader.css">
 
     <!-- Favicon and Touch Icons  -->
     <link rel="shortcut icon" href="assets/favicon-new.png">
@@ -30,7 +31,21 @@
     <link rel="icon" type="image/png" href="assets/favicon-new.png">
 </head>
 
-<body class="">
+<body class="preloader-active">
+    <div id="preloader">
+        <div class="loader-card">
+            <div class="loader-container">
+                <p>loading</p>
+                <div class="words">
+                    <span class="word">Websites</span>
+                    <span class="word">SEO</span>
+                    <span class="word">Apps</span>
+                    <span class="word">Quebix</span>
+                    <span class="word">Websites</span>
+                </div>
+            </div>
+        </div>
+    </div>
     <canvas class="cursor-trail" id="trail" style="display: none;"></canvas>
 
     <!-- Scroll Top -->
@@ -78,7 +93,7 @@
         </div>
         <!-- /Hero Banner -->
 
-        <!-- Select Work -->
+        <!-- section-about-us -->
         <div class="section-about-us flat-spacing" id="about">
             <div class="container">
                 <div class="row">
@@ -86,17 +101,17 @@
                         <div class="heading-section">
                             <div class="heading-sub fw-semibold effectFade fadeUp">About Us</div>
                             <div class="heading-title text-gradient-2 effectFade fadeRotateX">Human-Centered AI, <br>
-                                Built for Growth</div>
+                                Built for Production</div>
                         </div>
                     </div>
                     <div class="col-xxl-7 col-lg-6 lg-mb-24">
                         <div class="col-left">
                             <div class="position-relative z-5">
                                 <div class="sub text-white">
-                                    <span class="dot"></span> Available for worldwide project
+                                    <span class="dot"></span> Delivering Digital Solutions All Over Maharashtra
                                 </div>
-                                <h5 class="title fw-semibold text-white">Based in <span class="text-brand">Montréal,
-                                        Canada</span></h5>
+                                <h5 class="title fw-semibold text-white">Based in <span class="text-brand">Pune,
+                                        Maharashtra</span></h5>
                                 <a href="contact.html" class="tf-btn">
                                     Start a Project
                                 </a>
@@ -105,22 +120,66 @@
                         </div>
                     </div>
                     <div class="col-xxl-5 col-lg-6">
-                        <div class="mission-box mb-24">
-                            <h4 class="title fw-semibold effectFade fadeUp">Our Mission</h4>
-                            <div class="line"></div>
-                            <p class="text effectFade fadeUp">
-                                At Quebix Digital, our mission is to empower businesses by delivering cutting-edge
-                                digital solutions—from SEO-optimized websites to custom mobile applications. We combine
-                                technical expertise with creative strategy to ensure every project drives real growth
-                                and measurable success for our clients.
-                            </p>
+                        <div class="review-box mb-24">
+                            <div class="desc fw-semibold text-body-1">Trusted across Maharashtra, creating SEO-driven
+                                websites, powerful apps & digital growth systems</div>
+                            <div class="d-flex justify-content-between flex-wrap align-items-end gap-12">
+                                <div class="">
+                                    <div class="d-flex gap-4 text mb-10">
+                                        <svg width="26" height="24" viewBox="0 0 26 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M12.6792 18.3019L18.1887 16.9057L20.4906 24L12.6792 18.3019ZM25.3585 9.13208H15.6604L12.6792 0L9.69811 9.13208H0L7.84906 14.7925L4.86792 23.9245L12.717 18.2641L17.5472 14.7925L25.3585 9.13208Z"
+                                                fill="#219653" />
+                                        </svg> Reviews
+                                    </div>
+                                    <div class="d-flex gap-2">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <rect width="24" height="24" fill="#3F3F46" />
+                                            <path
+                                                d="M11.9996 16.4114L15.6496 15.4341L17.1746 20.4001L11.9996 16.4114ZM20.3996 9.99255H13.9746L11.9996 3.6001L10.0246 9.99255H3.59961L8.79961 13.9548L6.82461 20.3473L12.0246 16.385L15.2246 13.9548L20.3996 9.99255Z"
+                                                fill="white" />
+                                        </svg>
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <rect width="24" height="24" fill="#3F3F46" />
+                                            <path
+                                                d="M11.9996 16.4114L15.6496 15.4341L17.1746 20.4001L11.9996 16.4114ZM20.3996 9.99255H13.9746L11.9996 3.6001L10.0246 9.99255H3.59961L8.79961 13.9548L6.82461 20.3473L12.0246 16.385L15.2246 13.9548L20.3996 9.99255Z"
+                                                fill="white" />
+                                        </svg>
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <rect width="24" height="24" fill="#3F3F46" />
+                                            <path
+                                                d="M11.9996 16.4114L15.6496 15.4341L17.1746 20.4001L11.9996 16.4114ZM20.3996 9.99255H13.9746L11.9996 3.6001L10.0246 9.99255H3.59961L8.79961 13.9548L6.82461 20.3473L12.0246 16.385L15.2246 13.9548L20.3996 9.99255Z"
+                                                fill="white" />
+                                        </svg>
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <rect width="24" height="24" fill="#3F3F46" />
+                                            <path
+                                                d="M11.9996 16.4114L15.6496 15.4341L17.1746 20.4001L11.9996 16.4114ZM20.3996 9.99255H13.9746L11.9996 3.6001L10.0246 9.99255H3.59961L8.79961 13.9548L6.82461 20.3473L12.0246 16.385L15.2246 13.9548L20.3996 9.99255Z"
+                                                fill="white" />
+                                        </svg>
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <rect width="24" height="24" fill="#3F3F46" />
+                                            <path
+                                                d="M11.9996 16.4114L15.6496 15.4341L17.1746 20.4001L11.9996 16.4114ZM20.3996 9.99255H13.9746L11.9996 3.6001L10.0246 9.99255H3.59961L8.79961 13.9548L6.82461 20.3473L12.0246 16.385L15.2246 13.9548L20.3996 9.99255Z"
+                                                fill="white" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="counter text-neutral-200">
+                                    <span class="number" data-speed="1500" data-to="10"
+                                        data-inviewport="yes">10</span><span>+</span>
+                                </div>
+                            </div>
                         </div>
                         <div class="box-quotes effectFade fadeRotateX">
-                            <div class="image ">
-                                <img src="assets/images/section/quotes-1.jpg" alt="">
-                            </div>
                             <div class="content">
-                                <div class="icon mb-8">
+                                <div class="icon mb-12">
                                     <svg width="23" height="20" viewBox="0 0 23 20" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -128,13 +187,16 @@
                                             fill="#E4E4E7" />
                                     </svg>
                                 </div>
-                                <div class="text-body-1 fw-semibold desc">Good design feels obvious—because the hard
-                                    work is
-                                    hidden.</div>
-                                <div class="cite">
-                                    <div class="name text-body-3 fw-semibold">Ava Collins</div>
+                                <div class="text-body-1 fw-semibold desc">At Quebix Digital, we don’t just build
+                                    websites—we create powerful, engaging digital experiences that deliver measurable
+                                    real-world
+                                    results. Our mission is to empower businesses through innovation, smart strategy,
+                                    sustainable growth, and cutting-edge solutions that drive long-term success.
+                                </div>
+                                <div class="cite mt-20">
+                                    <div class="name text-body-2 fw-bold text-brand">Srushti Naphade</div>
                                     <div class="line"></div>
-                                    <div class="sub text-body-3">Design Lead</div>
+                                    <div class="sub text-body-3">Founder & CEO, Quebix</div>
                                 </div>
                             </div>
                         </div>
@@ -142,7 +204,8 @@
                 </div>
             </div>
         </div>
-        <!-- /Select Work -->
+        <!-- /section-about-us -->
+
         <!-- section-partner -->
         <div class="section-partner">
             <div class="container">
@@ -1123,6 +1186,7 @@
     <script src="assets/js/gsapAnimation.js"></script>
 
     <script src="assets/js/header-component.js"></script>
+    <script src="assets/js/loader.js"></script>
     <script src="assets/js/main.js"></script>
 
 </body>
