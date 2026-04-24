@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="assets/vendor/css/slick.css">
     <link rel="stylesheet" href="assets/vendor/css/slick.theme.css">
     <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
-    <link rel="stylesheet" href="assets/css/loader.css">
+
 
     <!-- Favicon and Touch Icons  -->
     <link rel="shortcut icon" href="assets/favicon-new.png">
@@ -31,21 +31,8 @@
     <link rel="icon" type="image/png" href="assets/favicon-new.png">
 </head>
 
-<body class="preloader-active">
-    <div id="preloader">
-        <div class="loader-card">
-            <div class="loader-container">
-                <p>loading</p>
-                <div class="words">
-                    <span class="word">Websites</span>
-                    <span class="word">SEO</span>
-                    <span class="word">Apps</span>
-                    <span class="word">Quebix</span>
-                    <span class="word">Websites</span>
-                </div>
-            </div>
-        </div>
-    </div>
+<body>
+
     <canvas class="cursor-trail" id="trail" style="display: none;"></canvas>
 
     <!-- Scroll Top -->
@@ -152,13 +139,7 @@
                                             <i class="icon icon-facebook-f"></i>
                                         </div>
                                     </a>
-                                    <a href="https://www.instagram.com/" target="_blank"
-                                        class="text-body-1 fw-semibold">
-                                        Instagram
-                                        <div class="social-item">
-                                            <i class="icon icon-instagram"></i>
-                                        </div>
-                                    </a>
+
                                 </div>
                             </div>
                         </div>
@@ -177,10 +158,6 @@
                                     <label class="fw-semibold text-body-3 mb-0">More About The Project</label>
                                     <textarea name="text" class=""></textarea>
                                 </fieldset>
-                                <div class="attachment d-flex gap-8 align-items-center">
-                                    <i class="icon icon-paperclip-solid fs-24"></i>
-                                    <div class="fw-semibold text-body-3">Add an Attachment</div>
-                                </div>
                                 <button type="submit" class="tf-btn w-100">Submit Message</button>
                             </form>
                         </div>
@@ -192,97 +169,14 @@
         <!-- map -->
         <div class="wg-map">
             <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d317859.6089702069!2d-0.075949!3d51.508112!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760349331f38dd%3A0xa8bf49dde1d56467!2sTower%20of%20London!5e0!3m2!1sen!2sus!4v1719221598456!5m2!1sen!2sus"
-                height="660" style="border:0;" allowfullscreen="" loading="lazy"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d120975.31407722498!2d73.73899743475452!3d18.64250890233142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b8377fbdeab3%3A0x2c4265dab1a7a0f8!2sPimpri-Chinchwad%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1777043316549!5m2!1sen!2sin"
+                width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
         <!-- /map -->
-        <!-- section-faqs -->
-        <div class="section-faqs flat-spacing">
-            <div class="container">
-                <div class="heading-section center mb-64">
-                    <div class="heading-sub fw-semibold effectFade fadeUp">FAQs</div>
-                    <div class="heading-title text-gradient-3 effectFade fadeRotateX">
-                        Frequently Asked <br>Questions
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-lg-8">
-                        <div class="accordion-asked" id="accordion-asked">
-                            <div class="accordion-asked-item effectFade fadeRotateX">
-                                <div class="accordion-asked-title" id="asked1">
-                                    <button class="accordion-button text-body-1 fw-semibold" type="button"
-                                        data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true"
-                                        aria-controls="collapse1">
-                                        What’s the typical timeline from idea to v1?
-                                        <span class="right-icon"></span>
-                                    </button>
-                                </div>
-                                <div id="collapse1" role="region" class="accordion-collapse collapse show"
-                                    aria-labelledby="asked1" data-bs-parent="#accordion-asked">
-                                    <div class="accordion-body">
-                                        A clear problem statement, success metrics, access to sample data, and a
-                                        stakeholder who can make decisions. We’ll run a kickoff workshop to align scope.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-asked-item effectFade fadeRotateX" data-delay="0.1">
-                                <div class="accordion-asked-title" id="asked2">
-                                    <button class="accordion-button text-body-1 fw-semibold collapsed" type="button"
-                                        data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false"
-                                        aria-controls="collapse2">
-                                        What do we need to start?
-                                        <span class="right-icon"></span>
-                                    </button>
-                                </div>
-                                <div id="collapse2" role="region" class="accordion-collapse collapse"
-                                    aria-labelledby="asked2" data-bs-parent="#accordion-asked">
-                                    <div class="accordion-body">
-                                        A clear problem statement, success metrics, access to sample data, and a
-                                        stakeholder who can make decisions. We’ll run a kickoff workshop to align scope.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-asked-item effectFade fadeRotateX" data-delay="0.2">
-                                <div class="accordion-asked-title" id="asked3">
-                                    <button class="accordion-button text-body-1 fw-semibold collapsed" type="button"
-                                        data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false"
-                                        aria-controls="collapse3">
-                                        Which models/stack do you use?
-                                        <span class="right-icon"></span>
-                                    </button>
-                                </div>
-                                <div id="collapse3" role="region" class="accordion-collapse collapse"
-                                    aria-labelledby="asked3" data-bs-parent="#accordion-asked">
-                                    <div class="accordion-body">
-                                        A clear problem statement, success metrics, access to sample data, and a
-                                        stakeholder who can make decisions. We’ll run a kickoff workshop to align scope.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-asked-item effectFade fadeRotateX" data-delay="0.3">
-                                <div class="accordion-asked-title" id="asked4">
-                                    <button class="accordion-button text-body-1 fw-semibold collapsed" type="button"
-                                        data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false"
-                                        aria-controls="collapse4">
-                                        Are model/API costs included in pricing?
-                                        <span class="right-icon"></span>
-                                    </button>
-                                </div>
-                                <div id="collapse4" role="region" class="accordion-collapse collapse"
-                                    aria-labelledby="asked4" data-bs-parent="#accordion-asked">
-                                    <div class="accordion-body">
-                                        A clear problem statement, success metrics, access to sample data, and a
-                                        stakeholder who can make decisions. We’ll run a kickoff workshop to align scope.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- /section-faqs -->
+
+
+
         <!-- footer -->
         <footer>
             <div class="footer-image">
@@ -296,18 +190,6 @@
                     <div class="title h6 fw-semibold">Get connected <br> with Quebix Digital on social</div>
                     <div class="text">Don’t miss our new updates!</div>
                     <div class="tf-social-1 justify-content-center">
-                        <a href="https://x.com/" target="_blank" class="text-body-1 fw-semibold">
-                            Twitter / X
-                            <div class="social-item">
-                                <i class="icon icon-twitter-x"></i>
-                            </div>
-                        </a>
-                        <a href="https://www.facebook.com/" target="_blank" class="text-body-1 fw-semibold">
-                            Facebook
-                            <div class="social-item">
-                                <i class="icon icon-facebook-f"></i>
-                            </div>
-                        </a>
                         <a href="https://www.instagram.com/" target="_blank" class="text-body-1 fw-semibold">
                             Instagram
                             <div class="social-item">
@@ -410,7 +292,7 @@
     <script src="assets/js/gsapAnimation.js"></script>
 
     <script src="assets/js/header-component.js"></script>
-    <script src="assets/js/loader.js"></script>
+
     <script src="assets/js/main.js"></script>
 
 </body>

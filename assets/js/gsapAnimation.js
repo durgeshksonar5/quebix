@@ -342,58 +342,7 @@
         }
     };
 
-    var loader = function() {
-        if ($(".preloader").length) {
-            var innerBars = document.querySelectorAll(".inner-bar");
-            var increment = 0;
 
-            function animateBars() {
-                for (var i = 0; i < 2; i++) {
-                    var randomWidth = Math.floor(Math.random() * 101);
-                    gsap.to(innerBars[i + increment], {
-                        width: randomWidth + "%",
-                        duration: 0.3,
-                        ease: "none",
-                    });
-                }
-
-                gsap.delayedCall(0.3, function() {
-                    for (var i = 0; i < 2; i++) {
-                        gsap.to(innerBars[i + increment], {
-                            width: "100%",
-                            duration: 0.3,
-                            ease: "none",
-                        });
-                    }
-
-                    increment += 2;
-
-                    if (increment < innerBars.length) {
-                        animateBars();
-                    } else {
-                        var preloaderTL = gsap.timeline({
-                            onComplete: () => {
-                                $(".preloader").remove();
-                                runAnimations();
-                            },
-                        });
-
-                        preloaderTL.to(".preloader", {
-                            "--preloader-clip": "100%",
-                            duration: 0.3,
-                            ease: "none",
-                        });
-                    }
-                });
-            }
-
-            $(window).on("load", function() {
-                animateBars();
-            });
-        } else {
-            runAnimations();
-        }
-    };
 
     var mouseHover = () => {
         if ($(".main-mouse-hover").length > 0) {
@@ -649,7 +598,7 @@
     };
 
     $(function() {
-        loader();
+        runAnimations();
     });
 
 
