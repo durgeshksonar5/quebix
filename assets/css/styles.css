@@ -5681,9 +5681,21 @@ button.animate-btn::after,
     gap: 30px;
 }
 
+.featured-works-list.single-column {
+    grid-template-columns: 1fr;
+}
+
+.featured-works-list.single-column .featured-works-item .image {
+    height: 600px;
+}
+
 @media (max-width: 768px) {
     .featured-works-list {
         grid-template-columns: 1fr;
+    }
+    
+    .featured-works-list.single-column .featured-works-item .image {
+        height: 380px; /* Reset height for mobile */
     }
 }
 
