@@ -429,19 +429,26 @@
                             </div>
                         </div>
                         <div class="col-lg-6">
-                            <form class="form-contact effectFade fadeUp">
+                            <form action="https://formsubmit.co/quebixofficial@gmail.com" method="POST" class="form-contact effectFade fadeUp">
+                                <input type="hidden" name="_subject" value="New Contact Form Submission - Quebix">
+                                <input type="hidden" name="_captcha" value="false">
+                                <input type="hidden" name="_template" value="table">
                                 <h4 class="heading fw-semibold">Fill this form below</h4>
                                 <fieldset class="mb-21">
                                     <label class="fw-semibold text-body-3 mb-20">Your Name</label>
-                                    <input class="" type="text" placeholder="Enter your full name" required>
+                                    <input class="" type="text" name="name" placeholder="Enter your full name" required>
                                 </fieldset>
                                 <fieldset class="mb-21">
-                                    <label class="fw-semibold text-body-3 mb-20">Your Phone</label>
-                                    <input class="" type="text" placeholder="Enter the e-mail" required>
+                                    <label class="fw-semibold text-body-3 mb-20">Contact No</label>
+                                    <input class="" type="tel" name="phone" placeholder="Enter your contact number" required>
+                                </fieldset>
+                                <fieldset class="mb-21">
+                                    <label class="fw-semibold text-body-3 mb-20">Gmail ID</label>
+                                    <input class="" type="email" name="email" placeholder="Enter your Gmail ID" required>
                                 </fieldset>
                                 <fieldset class="mb-18">
-                                    <label class="fw-semibold text-body-3 mb-0">More About The Project</label>
-                                    <textarea name="text" class=""></textarea>
+                                    <label class="fw-semibold text-body-3 mb-20">Message Anything</label>
+                                    <textarea name="message" class="" placeholder="Write your message here" required></textarea>
                                 </fieldset>
 
                                 <button type="submit" class="tf-btn w-100">Submit Message</button>
